@@ -1,47 +1,31 @@
-var hora = prompt(parseInt ("Ingresa tu día"));
+var  dia = prompt ("Ingresa tu día de nacimiento");
+var mes  = prompt("Ingresa tu mes de nacimiento")
 
-if  (hora<13){// si la hora es menor a 13
-    console.log("Es de mañana, desayuno rico");
-} else if(hora <= 19){
-    //de otro modo si la hora es menor o igual a 19
-console.log("Es de tarde, come rico");} 
-else{// si no
-    console.log("Es de noches, cena rico");
-}
 
-//Ejercicio HORARIO Juan Carlos XD
+if ((dia>=21 && mes== "marzo" )||(dia<=20 && mes== "abril")){
+    console.log("Super, tu signo es Aries");}
+else if ((dia>=21 && mes== "abril")||(dia <=20 && mes== "mayo")){
+    console.log("Super, tu signo es Tauro");}
+else if ((dia>=21 &&mes== "mayo")||(dia<=21 &&mes== "junio")){
+    console.log("Super, tu signo es Geminis");}
+else if ((dia>=22 &&mes== "junio")||(dia<=22 &&mes== "julio")){
+    console.log("Super, tu signo es Cancer");}
+else if ((dia>=23 &&mes== "julio")||(dia<=23 &&mes== "agosto")){
+    console.log("Super, tu signo es Leo");}
+else if ((dia>=24 &&mes== "agosto")||(dia<=22 && mes== "septiembre")){
+    console.log("Super, tu signo es Virgo");}
+else if ((dia>=23 &&mes== "septiembre")||(dia<=22 &&mes== "octubre")){
+    console.log("Super, tu signo es Libra");}
+else if ((dia>=23 && mes== "octubre")||(dia<=22 && mes== "noviembre")){
+    console.log("Super, tu signo es Escorpio");}
+else if ((dia>=23 && mes== "noviembre")||(dia<=21 && mes== "diciembre")){
+    console.log("Super, tu signo es Sagitario");}
+else if ((dia>=22 && mes== "diciembre")||(dia<=20&&mes== "enero")){
+    console.log("Super, tu signo es Capricornio");}
+else if ((dia>=21 && mes== "enero")||(dia<=19 && mes== "febrero")){
+    console.log("Super, tu signo es Acuario");}
+else if ((dia>=20 && mes== "febrero")||(dia<=20 && mes== "marzo")){
+    console.log(" Super, tu signo es Piscis");}
 
-var hora = prompt("Ingresa solo la hora actual en formato de 24 horas");
 
-if (hora < 12){
-    console.log("Buenos días.");
-} else if (hora >= 12 && hora <=18) {
-    console.log("Buenas tardes.");
-} else {
-    console.log("Buenas noches.")
-}
-/*
-En este ejercicio, Juan Carlos utiliza Los operadores Lógicos para evaluar si la hora es menor a 12, mayor o igual a 12 y menor o igual a 18. Con esto, podemos tener un poco más de control al momento de evaluar las condiciones.
-*/
-
-// EJERCICIO HORARIO GERARDO
-
-var hora = prompt("Ingresa solo la hora actual en formato de 24 horas");
-
-if (hora >= 0 && hora <=24) {
-    //Evaluar que la hora este dentro del rango
-
-    if (hora >= 7 && hora <=11){
-        console.log("Buenos dias.");
-    } else if (hora >= 12 && hora <=18) {
-        console.log("Buenas tardes.");  
-    } else if (hora >= 18 && hora <=24 ){
-        console.log("Buenas Noches.");  
-    }else {
-        console.log("Buenas madrugadas.");
-    }
-}else{
-        console.log("Dato mal ingresado");
-    }
-    
 
